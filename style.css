@@ -85,3 +85,26 @@ button:hover{
     background:#2a6280;
 
 }
+
+.planning-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planning-button {
+    padding: 20px 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #0066cc;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.planning-button:hover {
+    background-color: #004999;
+    transform: scale(1.1);
+}
