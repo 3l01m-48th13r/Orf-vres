@@ -9,46 +9,165 @@
 
     <link rel="icon" type="image/png" href="images/logo.png">
 
+    <!-- Icônes -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+<div class="dashboard">
 
-        <h1>Les Orfèvres</h1>
+    <!-- ================= MENU ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo">
+            <h2>Les Orfèvres</h2>
+        </div>
 
         <nav>
 
-            <a href="#">Accueil</a>
-            <a href="#">Cours</a>
-            <a href="#">Événements</a>
-            <a href="#">Contact</a>
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                Accueil
+            </a>
+
+            <a href="planning.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                Planning
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-book"></i>
+                Matières
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-list-check"></i>
+                Devoirs
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-chart-column"></i>
+                Statistiques
+            </a>
+
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                Paramètres
+            </a>
 
         </nav>
 
-    </header>
+    </aside>
 
-    <section class="hero">
+    <!-- ================= CONTENU ================= -->
 
-        <h2>Coucou Théo</h2>
+    <main class="content">
 
-        <p>
-            "Ils sont tous sympa à l'IMAG (surtout Sylvain Brochard)"
-        </p>
+        <!-- Barre supérieure -->
 
-        <button>Découvrir</button>
+        <header class="topbar">
 
-    </section>
+            <div>
+                <h1>Tableau de bord</h1>
+                <p>Bienvenue sur ton espace personnel.</p>
+            </div>
 
-    <div class="planning-container">
-        <a href="planning.html" class="planning-button">
-            Planning
-        </a>
-    </div>
+            <div class="topbar-right">
 
-    <script src="script.js"></script>
+                <button>
+                    <i class="fa-solid fa-rotate"></i>
+                    Actualiser
+                </button>
+
+                <img src="images/logo.png" alt="Profil">
+
+            </div>
+
+        </header>
+
+        <!-- Onglets -->
+
+        <section class="tabs">
+
+            <button class="tab active">
+                Tableau de bord
+            </button>
+
+            <button class="tab">
+                Planning
+            </button>
+
+            <button class="tab">
+                Configuration
+            </button>
+
+            <button class="tab">
+                Contenu
+            </button>
+
+            <button class="tab">
+                Statistiques
+            </button>
+
+        </section>
+
+        <!-- Cartes -->
+
+        <section class="cards">
+
+            <div class="card">
+                <i class="fa-solid fa-calendar-week"></i>
+                <h2>Planning</h2>
+                <p>Accéder au planning interactif.</p>
+
+                <a href="planning.html">
+                    Ouvrir
+                </a>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-book-open"></i>
+                <h2>Matières</h2>
+                <p>Retrouve tous tes cours.</p>
+
+                <a href="#">
+                    Ouvrir
+                </a>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <h2>Devoirs</h2>
+                <p>Travaux à rendre.</p>
+
+                <a href="#">
+                    Ouvrir
+                </a>
+            </div>
+
+            <div class="card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Statistiques</h2>
+                <p>Visualise ta progression.</p>
+
+                <a href="#">
+                    Ouvrir
+                </a>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
